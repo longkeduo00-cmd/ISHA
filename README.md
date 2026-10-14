@@ -2,7 +2,7 @@
 
 **Iterative Seed-guided Hypergraph Alignment** aligns nodes between two hypergraphs using a small set of corresponding hyperedges. The node correspondences inside each seed hyperedge pair are unknown. ISHA does not require seed-node correspondences or neural-network training.
 
-This repository contains the standalone ISHA method, a command-line interface, evaluation utilities, a repeated-experiment runner, and small synthetic examples. Historical method variants, baseline implementations, manuscripts, full datasets, and private experiment outputs are not included.
+This private repository contains the standalone ISHA method, a command-line interface, evaluation utilities, a repeated-experiment runner, small synthetic examples, and the processed dataset snapshots used for the ten paper alignment tasks. Historical method variants, baseline implementations, manuscripts, full unprocessed datasets, and private experiment outputs are not included.
 
 ## Method
 
@@ -140,11 +140,14 @@ Example runner smoke test:
 python -m experiments.run_pairs --pairs examples/pairs.csv --alpha-values 0.4 --repeats 2 --identity-ground-truth --output-dir outputs/toy_run
 ```
 
-`experiments/pairs_10_real.csv` lists the ten paper snapshot pairs from Email-Enron, Contact-High-School, NDC-Classes, Tags-Ask-Ubuntu, and Congress-Bills. It contains paths, not dataset contents. If you have the original processed datasets, set `--data-root` to the directory containing their `datasets/` folder:
+`experiments/pairs_10_real.csv` lists the ten paper snapshot pairs from Email-Enron, Contact-High-School, NDC-Classes, Tags-Ask-Ubuntu, and Congress-Bills. All 16 distinct snapshot files are included under `datasets/`; no separate data download is needed. From the repository root, first verify the files and then reproduce the 50-run experiments using the frozen seed-pool order:
 
 ```bash
-python -m experiments.run_pairs --pairs experiments/pairs_10_real.csv --data-root /path/to/original/project --alpha-values 0.1,0.4,0.7 --repeats 50 --max-rounds 10 --identity-ground-truth --output-dir outputs/paper_50
+python -m experiments.verify_datasets
+python -m experiments.run_pairs --pairs experiments/pairs_10_real.csv --data-root . --seed-pool-manifest datasets/seed_pool_manifest.json --alpha-values 0.1,0.4,0.7 --repeats 50 --max-rounds 10 --identity-ground-truth --output-dir outputs/paper_50
 ```
+
+See [datasets/README.md](datasets/README.md) for the included snapshots, data format, and provenance. The supplied source-data README files are retained with each dataset. Names, email addresses, node-label lookup files, and the complete unprocessed event collections are not included.
 
 The runner is sequential, so its timing is not the original parallel efficiency benchmark. It is intended to reproduce alignment metrics, not to compare CPU runtime or peak memory against baselines.
 
@@ -164,13 +167,14 @@ Before publication, both the supplied server implementation and this standalone 
 - Precision, recall, and F1 score agreed with the corresponding archived server trials within `1e-12`.
 - All 30 F1 means and sample standard deviations agreed with the supplied paper table to three decimal places.
 
-This check used Python 3.12.10, NumPy 2.5.3, and SciPy 1.18.1 on Windows. It verifies these inputs and settings, not arbitrary software versions or different seed samples. The underlying benchmark data and private trial files are not distributed in this repository.
+This check used Python 3.12.10, NumPy 2.5.3, and SciPy 1.18.1 on Windows. It verifies these inputs and settings, not arbitrary software versions or different seed samples. The processed benchmark snapshots are included and match the checked input hashes. Private trial files and full unprocessed datasets are not included.
 
 ## Repository layout
 
 ```text
 isha/                 Core method, API, file I/O, metrics, and CLI
 experiments/          Repeated labeled-snapshot evaluation
+datasets/             Verified snapshots, checksums, and frozen seed-pool order
 examples/             Small synthetic inputs
 tests/                Unit tests
 requirements.txt      Pinned reproduction environment
@@ -178,4 +182,4 @@ requirements.txt      Pinned reproduction environment
 
 ## License
 
-No license has been selected for this repository. Public availability does not itself grant permission to redistribute or relicense the code.
+No license has been selected for the method code. The repository is private. Inclusion of third-party dataset snapshots does not change their original ownership or usage terms; preserve their source attribution and check the original terms before redistribution.

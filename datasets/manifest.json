@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "source_archive": "1013.tar.gz",
+  "scope": "Processed snapshots for the ten paper alignment tasks",
+  "files": [
+    {
+      "path": "datasets/simplices/NDC-classes/NDC_classes_hypergraphs_complex/year_hypergraphs/NDC-classes-2015.txt",
+      "bytes": 5650,
+      "sha256": "5b3a2188a2dd009f6af92b10f6d66b1db3938b55be6f6894b93f137df02e7db6",
+      "nodes": 621,
+      "hyperedges": 367
+    },
+    {
+      "path": "datasets/simplices/NDC-classes/NDC_classes_hypergraphs_complex/year_hypergraphs/NDC-classes-2016.txt",
+      "bytes": 4689,
+      "sha256": "ae78b8aeeb7aef90d7fdedb9be6477626ab5f6f997346cd493f01443ce34be8a",
+      "nodes": 602,
+      "hyperedges": 319
+    },
+    {
+      "path": "datasets/simplices/NDC-classes/NDC_classes_hypergraphs_complex/year_hypergraphs/NDC-classes-2017.txt",
+      "bytes": 3769,
+      "sha256": "737e2bcaa9daa7f7b22d1c6cfcf1b7afe4960ec24d44367b1bd4f08882bd5f6c",
+      "nodes": 499,
+      "hyperedges": 279
+    },
+    {
+      "path": "datasets/simplices/congress-bills/congress_bills_hypergraphs/event-bin_hypergraphs/congress-bills-B000.txt",
+      "bytes": 347937,
+      "sha256": "a49bd97e077be1c574ad822ccf7f556b8554664853964d7f4fd1dc92cc516ea1",
+      "nodes": 1486,
+      "hyperedges": 7687
+    },
+    {
+      "path": "datasets/simplices/congress-bills/congress_bills_hypergraphs/event-bin_hypergraphs/congress-bills-B001.txt",
+      "bytes": 228280,
+      "sha256": "6786a386e09d9b3f3ccc7ac8d86873b26f792a59281abe685ed68054900d333a",
+      "nodes": 1341,
+      "hyperedges": 6065
+    },
+    {
+      "path": "datasets/simplices/congress-bills/congress_bills_hypergraphs/event-bin_hypergraphs/congress-bills-B002.txt",
+      "bytes": 272288,
+      "sha256": "aa1df89e05f04d0dc1d9bb7af1e1bd58eb4f042902e5aff3e17fbf86d435cd1b",
+      "nodes": 514,
+      "hyperedges": 6938
+    },
+    {
+      "path": "datasets/simplices/congress-bills/congress_bills_hypergraphs/event-bin_hypergraphs/congress-bills-B003.txt",
+      "bytes": 248577,
+      "sha256": "e96c8849fa5dd2311bff0a0bc8b89be0e00229840c2a66337b451aff0dd02007",
+      "nodes": 671,
+      "hyperedges": 7100
+    },
+    {
+      "path": "datasets/simplices/contact-high-school/contact_high_school_hypergraphs/day_hypergraphs/contact-high-school-2013-12-02.txt",
+      "bytes": 21363,
+      "sha256": "b28dc0096ef7b08cbfceae074c7957f72cb3f153645ac64312dc3c74546b2b7b",
+      "nodes": 312,
+      "hyperedges": 2655
+    },
+    {
+      "path": "datasets/simplices/contact-high-school/contact_high_school_hypergraphs/day_hypergraphs/contact-high-school-2013-12-03.txt",
+      "bytes": 24334,
+      "sha256": "09e82d4ed5e511e6af709de59adb984ba79c506fd7e978f0d87eecba60de101e",
+      "nodes": 310,
+      "hyperedges": 3002
+    },
+    {
+      "path": "datasets/simplices/contact-high-school/contact_high_school_hypergraphs/day_hypergraphs/contact-high-school-2013-12-04.txt",
+      "bytes": 20661,
+      "sha256": "633454943dabda1313b95b7caaf985cc3881110ad15a16c3363eadc373cc3114",
+      "nodes": 303,
+      "hyperedges": 2543
+    },
+    {
+      "path": "datasets/simplices/email-Enron/email_enron_quarter_hypergraphs/quarter_hypergraphs/email-Enron-2000-Q3.txt",
+      "bytes": 2941,
+      "sha256": "b8b8d3d479dd3b0776962c91608c42bf81a4bc7427cef7eb17daafb520ff76d0",
+      "nodes": 114,
+      "hyperedges": 338
+    },
+    {
+      "path": "datasets/simplices/email-Enron/email_enron_quarter_hypergraphs/quarter_hypergraphs/email-Enron-2000-Q4.txt",
+      "bytes": 3923,
+      "sha256": "19dec60e87fcbd7ac4506a2b71dedc39245553c3dbeb0127df97def4782e1dce",
+      "nodes": 124,
+      "hyperedges": 426
+    },
+    {
+      "path": "datasets/simplices/email-Enron/email_enron_quarter_hypergraphs/quarter_hypergraphs/email-Enron-2001-Q1.txt",
+      "bytes": 3467,
+      "sha256": "94ca3ac14be92a1e54ad72d59ab32101da4410f989f57e251955856b0b46a984",
+      "nodes": 120,
+      "hyperedges": 391
+    },
+    {
+      "path": "datasets/simplices/tags-ask-ubuntu/tags_ask_ubuntu_hypergraphs/event-bin_hypergraphs/tags-ask-ubuntu-B000.txt",
+      "bytes": 170991,
+      "sha256": "ff56f01042e43bb3e34ee8d07463d2dc88020b25e80dafcd7dffcfc9fec74d4e",
+      "nodes": 1683,
+      "hyperedges": 14806
+    },
+    {
+      "path": "datasets/simplices/tags-ask-ubuntu/tags_ask_ubuntu_hypergraphs/event-bin_hypergraphs/tags-ask-ubuntu-B001.txt",
+      "bytes": 185220,
+      "sha256": "5c503e0d6ac68d3d532da6a3fed8f1f8c54638636131786bf148621f533de5f0",
+      "nodes": 1809,
+      "hyperedges": 15041
+    },
+    {
+      "path": "datasets/simplices/tags-ask-ubuntu/tags_ask_ubuntu_hypergraphs/event-bin_hypergraphs/tags-ask-ubuntu-B002.txt",
+      "bytes": 188035,
+      "sha256": "082e96941f31aaf8c90f6a2071573605a99d53b8d39334adabf7a1c74aad23c6",
+      "nodes": 1938,
+      "hyperedges": 14950
+    }
+  ]
+}

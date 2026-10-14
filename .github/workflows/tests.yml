@@ -17,4 +17,5 @@ jobs:
       - run: python -m pip install -r requirements.txt
       - run: python -m pip install --no-deps -e .
       - run: python -m unittest discover -s tests -v
+      - run: python -m experiments.verify_datasets
       - run: python -m isha --source examples/source.txt --target examples/target.txt --seeds examples/seed_hyperedges.csv --ground-truth examples/ground_truth.csv --output outputs/demo.csv
