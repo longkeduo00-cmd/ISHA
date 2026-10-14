@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv*/
+build/
+dist/
+outputs/
+datasets/
+results/
+paper_results/
+.env
+.env.*
+*.tar.gz
+*.zip
+.DS_Store
+Thumbs.db

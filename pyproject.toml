@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "isha-hypergraph"
+version = "0.1.0"
+description = "Iterative Seed-guided Hypergraph Alignment"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["numpy>=1.26,<3", "scipy>=1.12,<2"]
+
+[project.urls]
+Repository = "https://github.com/longkeduo00-cmd/ISHA"
+
+[tool.setuptools.packages.find]
+include = ["isha*", "experiments*"]
