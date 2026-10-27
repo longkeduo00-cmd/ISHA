@@ -50,13 +50,18 @@
     },
     {
       "path": "README.md",
-      "bytes": 6953,
-      "sha256": "e1978ffb4c1457b073eec4fc217ebb0b517e5df9f99054d4f1184edac14c168f"
+      "bytes": 3296,
+      "sha256": "8c39907312382048f5a526373aaa45bc8d367036144b2e7d97cb92aac0c35a02"
     },
     {
       "path": "tables/alignment_dataset_statistics.csv",
       "bytes": 996,
       "sha256": "2c8c1da270efed86484ef499847db1618bd927966172cf6adc6b35c260e42bf9"
+    },
+    {
+      "path": "tables/efficiency_full_dataset_statistics.csv",
+      "bytes": 415,
+      "sha256": "7110ef7b902bdea7c3a6a3b42583b5f84f48771ef0eef3bd8023e6d81fda8ddd"
     },
     {
       "path": "tables/manuscript_f1_targets.csv",
@@ -65,13 +70,13 @@
     },
     {
       "path": "verification.json",
-      "bytes": 7940,
-      "sha256": "f52d8c06efefa5612977648b0b3bead5fa7e15a15179f04b53c82e7b320c720d"
+      "bytes": 7627,
+      "sha256": "37115862d7dc5a899d533208ba69ef62ff6b8b52101c86e01893869ad2619fa7"
     },
     {
       "path": "verify_results.py",
-      "bytes": 7954,
-      "sha256": "830144c54883ad0f18d149c5b3164996ffc0bdddfc1108f731dd304c712796ed"
+      "bytes": 8583,
+      "sha256": "98f562e6775f06ca6cf9e974ca3e0afbdfe6d65d6f5d76f857657979a6d548d1"
     }
   ]
 }

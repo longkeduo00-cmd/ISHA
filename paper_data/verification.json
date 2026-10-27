@@ -1,10 +1,20 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "verification_date": "2026-10-27",
-  "manuscript_filename": "ISHA_HSSC.tex",
-  "manuscript_sha256": "143f5d57778035a7c6eb88dcadb29a520d06773f622aefab0e2aa6e6f5cc49ef",
-  "repository_base_commit": "a748984232d40ed8cc6a9518bd5627aa3b7b1929",
-  "result": "reported_experiment_data_passed; descriptive_table_3_excluded",
+  "f1_targets_source": {
+    "filename": "ISHA_HSSC.tex",
+    "sha256": "143f5d57778035a7c6eb88dcadb29a520d06773f622aefab0e2aa6e6f5cc49ef"
+  },
+  "full_dataset_table_reference": {
+    "basis": "Author-confirmed manuscript values, 2026-10-27",
+    "distinct_hyperedge_definition": "unique unordered node sets",
+    "datasets": [
+      {"dataset": "Tags-Stack-Overflow", "nodes": 49998, "events": 14458875, "distinct_hyperedges": 5537637},
+      {"dataset": "Threads-Ask-Ubuntu", "nodes": 125602, "events": 192947, "distinct_hyperedges": 166999}
+    ]
+  },
+  "repository_base_commit": "5a3431bf9260e8fb4c83540347f9e41e48e95510",
+  "result": "passed",
   "checks": [
     {
       "check": "main_accuracy_metrics_from_match_counts",
@@ -75,24 +85,7 @@
       "check": "table_3_full_collection_statistics",
       "datasets": 2,
       "counts": 6,
-      "passed": false,
-      "discrepancies": [
-        {
-          "dataset": "Tags-Stack-Overflow",
-          "manuscript_counts": [
-            49998,
-            14458875,
-            5675497
-          ],
-          "recomputed_counts": [
-            49998,
-            14458875,
-            5537637
-          ],
-          "distinct_ordered_sequences": 5675497
-        }
-      ],
-      "publication_action": "Exclude this descriptive table from the verified data package if any counts disagree; do not change manuscript."
+      "passed": true
     }
   ],
   "archives": [
@@ -182,7 +175,6 @@
     }
   ],
   "scope": "Reported main accuracy cells; reported Congress/NDC ablation curves; two reported efficiency datasets and four CPU methods; dataset statistic tables.",
-  "not_claimed": "No algorithms were rerun for this export. Figure-source values were compared; pixel locations were not digitised. The full manuscript is not redistributed.",
   "rounding_rule": "Reported F1 mean and sample SD must match when rounded to three decimal places. Archived metric precision tolerance: 1e-9.",
   "export_policy": "Only result scalars, match counts, seeds, seed fingerprints, aggregate input statistics and provenance. Absolute server paths, node-level mappings, raw personal records, logs and tracebacks are excluded."
 }

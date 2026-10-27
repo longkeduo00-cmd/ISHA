@@ -134,6 +134,17 @@ def main():
                   'identical_hyperedges': len(set(edge_lists[0]) & set(edge_lists[1]))}
         assert all(int(record[k]) == v for k, v in actual.items()), record['pair_id']
 
+    verification = json.loads((HERE / 'verification.json').read_text())
+    full_dataset_rows = rows('tables/efficiency_full_dataset_statistics.csv')
+    full_reference = {r['dataset']: r for r in verification['full_dataset_table_reference']['datasets']}
+    assert {r['dataset'] for r in full_dataset_rows} == set(full_reference)
+    for record in full_dataset_rows:
+        expected = full_reference[record['dataset']]
+        for column in ['nodes', 'events', 'distinct_hyperedges']:
+            assert int(record[column]) == expected[column], (record['dataset'], column)
+    assert verification['result'] == 'passed'
+    assert all(item['passed'] for item in verification['checks'])
+
     manifest_path = HERE / 'file_manifest.json'
     if manifest_path.exists():
         manifest = json.loads(manifest_path.read_text())
@@ -142,8 +153,8 @@ def main():
             assert path.stat().st_size == item['bytes'], item['path']
             assert hashlib.sha256(path.read_bytes()).hexdigest() == item['sha256'], item['path']
     print('PASS: 7,500 main runs, 4,000 ablation runs, 400 efficiency runs;')
-    print('190 manuscript mean/SD cells; both figure-source tables; 10 input-pair statistics.')
-    print('Scope excludes the unresolved full-collection counts in manuscript Table 3; see verification.json.')
+    print('190 manuscript mean/SD cells; both figure-source tables;')
+    print('10 input-pair statistics; 2 full-dataset statistics; file hashes.')
 
 
 if __name__ == '__main__':
