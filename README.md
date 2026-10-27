@@ -15,7 +15,7 @@ This repository contains the standalone ISHA method, a command-line interface, e
 
 ## Installation
 
-Use Python **3.12**. The pinned dependency versions are the environment used for the local reproduction check.
+Use Python **3.12**. 
 
 ```bash
 git clone https://github.com/longkeduo00-cmd/ISHA.git
