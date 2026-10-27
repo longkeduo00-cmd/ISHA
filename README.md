@@ -13,8 +13,6 @@ This repository contains the standalone ISHA method, a command-line interface, e
 4. Use newly accepted node pairs to select related incident hyperedge pairs and add evidence to their remaining unmatched node pairs.
 5. Stop when no new matches can be accepted or the maximum number of rounds is reached. The default is **10 rounds**; one round is the noniterative ablation.
 
-Only positive-evidence candidates are considered. The server implementation's validity guard and floating-point operation order are retained. Equal candidate scores use stable source-node and sorted sparse-column order. Equal hyperedge-overlap scores prefer an equal hyperedge size, then a smaller target hyperedge, then more unmatched target nodes; remaining ties preserve the input hyperedge order. No rule rewards equal source and target node IDs.
-
 ## Installation
 
 Use Python **3.12**. The pinned dependency versions are the environment used for the local reproduction check.
