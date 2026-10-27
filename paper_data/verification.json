@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "verification_date": "2026-10-27",
+  "manuscript_filename": "ISHA_HSSC.tex",
+  "manuscript_sha256": "143f5d57778035a7c6eb88dcadb29a520d06773f622aefab0e2aa6e6f5cc49ef",
+  "repository_base_commit": "a748984232d40ed8cc6a9518bd5627aa3b7b1929",
+  "result": "reported_experiment_data_passed; descriptive_table_3_excluded",
+  "checks": [
+    {
+      "check": "main_accuracy_metrics_from_match_counts",
+      "rows": 7500,
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "passed": true
+    },
+    {
+      "check": "table_4_main_accuracy",
+      "mean_sd_cells": 150,
+      "display_decimal_places": 3,
+      "passed": true
+    },
+    {
+      "check": "ablation_metrics_from_match_counts",
+      "rows": 4000,
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "passed": true
+    },
+    {
+      "check": "figure_2_source_data",
+      "rows": 120,
+      "maximum_absolute_errors": {
+        "mean": 1.1102230246251565e-16,
+        "sample_sd": 9.540979117872439e-17
+      },
+      "passed": true
+    },
+    {
+      "check": "main_versus_ablation_same_ISHA_runs",
+      "rows": 600,
+      "maximum_absolute_errors": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "passed": true
+    },
+    {
+      "check": "efficiency_metrics_from_match_counts",
+      "rows": 400,
+      "maximum_absolute_error": 1.1102230246251565e-16,
+      "passed": true
+    },
+    {
+      "check": "figure_3_source_data",
+      "rows": 80,
+      "maximum_absolute_errors": {
+        "median": 4.440892098500626e-16,
+        "q25": 2.842170943040401e-14,
+        "q75": 1.1368683772161603e-13
+      },
+      "passed": true
+    },
+    {
+      "check": "table_5_efficiency_f1",
+      "mean_sd_cells": 40,
+      "display_decimal_places": 3,
+      "passed": true
+    },
+    {
+      "check": "table_2_input_statistics",
+      "pairs": 10,
+      "counts": 60,
+      "passed": true
+    },
+    {
+      "check": "table_3_full_collection_statistics",
+      "datasets": 2,
+      "counts": 6,
+      "passed": false,
+      "discrepancies": [
+        {
+          "dataset": "Tags-Stack-Overflow",
+          "manuscript_counts": [
+            49998,
+            14458875,
+            5675497
+          ],
+          "recomputed_counts": [
+            49998,
+            14458875,
+            5537637
+          ],
+          "distinct_ordered_sequences": 5675497
+        }
+      ],
+      "publication_action": "Exclude this descriptive table from the verified data package if any counts disagree; do not change manuscript."
+    }
+  ],
+  "archives": [
+    {
+      "file": "928.tar.gz",
+      "sha256": "192ca0636f24379830997abf4682502f2e83a7eec8d46683f3076ccf0a2365bd"
+    },
+    {
+      "file": "928-ablation.tar.gz",
+      "sha256": "d27d5a10028ae8fbd0f0b1868e02d4bcf58cad170e086a436663868360d91050"
+    },
+    {
+      "file": "930ef.tar.gz",
+      "sha256": "06926e0e8a58c892944812a33f99c039e7c9fb58eca6ae969a46919a60b14e7f"
+    }
+  ],
+  "main_source_selection": [
+    {
+      "category": "main_accuracy",
+      "pair_id": "email-Enron-2000-Q3_vs_email-Enron-2000-Q4",
+      "archive": "928.tar.gz",
+      "member_basename": "trial_audit_paired_hypergraph_alpha_sweep_quantity_matched_global_random_methods-FRUI-Grad-Alignplus-MAH-MAHA-ISHA_isha-mutual-top1_iterations-10_beta1-0_beta2-1.csv",
+      "sha256": "4be9e42cabfa47dedd13bdd60d9edb65c1add4e87cec202d3b82ad1ae5fc0237"
+    },
+    {
+      "category": "main_accuracy",
+      "pair_id": "email-Enron-2000-Q4_vs_email-Enron-2001-Q1",
+      "archive": "928.tar.gz",
+      "member_basename": "trial_audit_paired_hypergraph_alpha_sweep_quantity_matched_global_random_methods-FRUI-Grad-Alignplus-MAH-MAHA-ISHA_isha-mutual-top1_iterations-10_beta1-0_beta2-1.csv",
+      "sha256": "dd5773703d68904a253e738be58d6f7e4e11c4b5f294abf05ecc354acefc4f69"
+    },
+    {
+      "category": "main_accuracy",
+      "pair_id": "contact-high-school-2013-12-02_vs_contact-high-school-2013-12-03",
+      "archive": "928.tar.gz",
+      "member_basename": "trial_audit_paired_hypergraph_alpha_sweep_quantity_matched_global_random_methods-FRUI-Grad-Alignplus-MAH-MAHA-ISHA_isha-mutual-top1_iterations-10_beta1-0_beta2-1.csv",
+      "sha256": "ff12b962177b32e2f464a893ac769855b99ac8c680a8c298d987c8e6d02c3d47"
+    },
+    {
+      "category": "main_accuracy",
+      "pair_id": "contact-high-school-2013-12-03_vs_contact-high-school-2013-12-04",
+      "archive": "928.tar.gz",
+      "member_basename": "trial_audit_paired_hypergraph_alpha_sweep_quantity_matched_global_random_methods-FRUI-Grad-Alignplus-MAH-MAHA-ISHA_isha-mutual-top1_iterations-10_beta1-0_beta2-1.csv",
+      "sha256": "c5ba62513ac4ac1461332df56e8b3b865a9638f3efaae9dffe0b951d2a3141aa"
+    },
+    {
+      "category": "main_accuracy",
+      "pair_id": "NDC-classes-2015_vs_NDC-classes-2016",
+      "archive": "928.tar.gz",
+      "member_basename": "trial_audit_paired_hypergraph_alpha_sweep_quantity_matched_global_random_methods-FRUI-Grad-Alignplus-MAH-MAHA-ISHA_isha-mutual-top1_iterations-10_beta1-0_beta2-1.csv",
+      "sha256": "df30bf7ac1c568816be1dc3dae6c869bfcbd8e93689c0b7df696b4499fcd27d1"
+    },
+    {
+      "category": "main_accuracy",
+      "pair_id": "NDC-classes-2016_vs_NDC-classes-2017",
+      "archive": "928.tar.gz",
+      "member_basename": "trial_audit_paired_hypergraph_alpha_sweep_quantity_matched_global_random_methods-FRUI-Grad-Alignplus-MAH-MAHA-ISHA_isha-mutual-top1_iterations-10_beta1-0_beta2-1.csv",
+      "sha256": "7e1356e679c3c921d7b9b7aa931deb40189de9352d180790388ff245c824c9d3"
+    },
+    {
+      "category": "main_accuracy",
+      "pair_id": "tags-ask-ubuntu-B000_vs_tags-ask-ubuntu-B001",
+      "archive": "928.tar.gz",
+      "member_basename": "trial_audit_paired_hypergraph_alpha_sweep_quantity_matched_global_random_methods-FRUI-Grad-Alignplus-MAH-MAHA-ISHA_isha-mutual-top1_iterations-10_beta1-0_beta2-1-1.csv",
+      "sha256": "ecf9f3139b1e0c935814669e4601c87918e90bf6e4dc4ee7de4a59883db60514"
+    },
+    {
+      "category": "main_accuracy",
+      "pair_id": "tags-ask-ubuntu-B001_vs_tags-ask-ubuntu-B002",
+      "archive": "928.tar.gz",
+      "member_basename": "trial_audit_paired_hypergraph_alpha_sweep_quantity_matched_global_random_methods-FRUI-Grad-Alignplus-MAH-MAHA-ISHA_isha-mutual-top1_iterations-10_beta1-0_beta2-1.csv",
+      "sha256": "493da135b56228d420e3ebd367056cd77f4c9a2705c39b746711c6ffe872f8be"
+    },
+    {
+      "category": "main_accuracy",
+      "pair_id": "congress-bills-B000_vs_congress-bills-B001",
+      "archive": "928.tar.gz",
+      "member_basename": "trial_audit_paired_hypergraph_alpha_sweep_quantity_matched_global_random_methods-FRUI-Grad-Alignplus-MAH-MAHA-ISHA_isha-mutual-top1_iterations-10_beta1-0_beta2-1.csv",
+      "sha256": "98fb6bd37148182a626d5cb06c4c8a5989e131fb874d7eb470a118d7a1461d2a"
+    },
+    {
+      "category": "main_accuracy",
+      "pair_id": "congress-bills-B002_vs_congress-bills-B003",
+      "archive": "928.tar.gz",
+      "member_basename": "trial_audit_paired_hypergraph_alpha_sweep_quantity_matched_global_random_methods-FRUI-Grad-Alignplus-MAH-MAHA-ISHA_isha-mutual-top1_iterations-10_beta1-0_beta2-1.csv",
+      "sha256": "1dbdf72d69bc995749c11a28043a911107b49d20c48e773bdbfc5ca62888305b"
+    }
+  ],
+  "scope": "Reported main accuracy cells; reported Congress/NDC ablation curves; two reported efficiency datasets and four CPU methods; dataset statistic tables.",
+  "not_claimed": "No algorithms were rerun for this export. Figure-source values were compared; pixel locations were not digitised. The full manuscript is not redistributed.",
+  "rounding_rule": "Reported F1 mean and sample SD must match when rounded to three decimal places. Archived metric precision tolerance: 1e-9.",
+  "export_policy": "Only result scalars, match counts, seeds, seed fingerprints, aggregate input statistics and provenance. Absolute server paths, node-level mappings, raw personal records, logs and tracebacks are excluded."
+}

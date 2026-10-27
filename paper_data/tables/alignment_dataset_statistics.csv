@@ -1,0 +1,11 @@
+dataset,pair_id,source_nodes,target_nodes,source_hyperedges,target_hyperedges,shared_nodes,identical_hyperedges
+Email-Enron,email-Enron-2000-Q3_vs_email-Enron-2000-Q4,114,124,338,426,109,167
+Email-Enron,email-Enron-2000-Q4_vs_email-Enron-2001-Q1,124,120,426,391,111,165
+Contact-High-School,contact-high-school-2013-12-02_vs_contact-high-school-2013-12-03,312,310,2655,3002,296,1006
+Contact-High-School,contact-high-school-2013-12-03_vs_contact-high-school-2013-12-04,310,303,3002,2543,291,998
+NDC-Classes,NDC-classes-2015_vs_NDC-classes-2016,621,602,367,319,459,216
+NDC-Classes,NDC-classes-2016_vs_NDC-classes-2017,602,499,319,279,424,203
+Tags-Ask-Ubuntu,tags-ask-ubuntu-B000_vs_tags-ask-ubuntu-B001,1683,1809,14806,15041,1498,1550
+Tags-Ask-Ubuntu,tags-ask-ubuntu-B001_vs_tags-ask-ubuntu-B002,1809,1938,15041,14950,1624,1725
+Congress-Bills,congress-bills-B000_vs_congress-bills-B001,1486,1341,7687,6065,1338,116
+Congress-Bills,congress-bills-B002_vs_congress-bills-B003,514,671,6938,7100,441,205

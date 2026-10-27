@@ -1,0 +1,11 @@
+dataset_family,dataset,scale_nodes,prepared_source_nodes,prepared_target_nodes,prepared_source_hyperedges,prepared_target_hyperedges,prepared_source_incidences,prepared_target_incidences,prepared_source_clique_edges,prepared_target_clique_edges,prepared_common_nodes,prepared_common_hyperedges
+threads-ask-ubuntu,threads-ask-ubuntu_N0020000,20000,20037,19958,16770,16770,38667,38674,28154,28044,7917,3354
+tags-stack-overflow,tags-stack-overflow_N0010000,10000,9774,10223,26446,26446,89801,92051,65838,70452,7223,5290
+threads-ask-ubuntu,threads-ask-ubuntu_N0001000,1000,1009,990,521,521,1199,1186,894,847,318,105
+tags-stack-overflow,tags-stack-overflow_N0001000,1000,993,1007,661,661,2149,2170,2420,2478,482,133
+threads-ask-ubuntu,threads-ask-ubuntu_N0005000,5000,4978,5023,3179,3179,7342,7329,5497,5438,1764,636
+threads-ask-ubuntu,threads-ask-ubuntu_N0010000,10000,9982,10018,7191,7191,16554,16608,12154,12237,3744,1439
+tags-stack-overflow,tags-stack-overflow_N0020000,20000,19618,20381,145995,145995,516099,532580,268154,292937,16634,29199
+tags-stack-overflow,tags-stack-overflow_N0005000,5000,4941,5057,7147,7147,23768,24168,21373,22490,3181,1430
+tags-stack-overflow,tags-stack-overflow_N0002500,2500,2439,2562,2366,2366,7778,7819,7860,8136,1401,474
+threads-ask-ubuntu,threads-ask-ubuntu_N0002500,2500,2480,2519,1458,1458,3317,3365,2374,2481,805,292
