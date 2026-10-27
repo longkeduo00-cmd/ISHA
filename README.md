@@ -2,7 +2,7 @@
 
 **Iterative Seed-guided Hypergraph Alignment** aligns nodes between two hypergraphs using a small set of corresponding hyperedges. The node correspondences inside each seed hyperedge pair are unknown. ISHA does not require seed-node correspondences or neural-network training.
 
-This private repository contains the standalone ISHA method, a command-line interface, evaluation utilities, a repeated-experiment runner, small synthetic examples, the processed dataset snapshots used for the ten paper alignment tasks, and verified numeric evidence in [`paper_data/`](paper_data/README.md). Historical method variants, baseline implementations, manuscripts, full unprocessed datasets, and unrelated experiment outputs are not included.
+This repository contains the standalone ISHA method, a command-line interface, evaluation utilities, a repeated-experiment runner, small synthetic examples, the processed dataset snapshots used for the ten paper alignment tasks, and verified numeric evidence in [`paper_data/`](paper_data/README.md). Historical method variants, baseline implementations, manuscripts, full unprocessed datasets, and unrelated experiment outputs are not included.
 
 ## Paper results
 
@@ -175,7 +175,7 @@ Before publication, both the supplied server implementation and this standalone 
 - Precision, recall, and F1 score agreed with the corresponding archived server trials within `1e-12`.
 - All 30 F1 means and sample standard deviations agreed with the supplied paper table to three decimal places.
 
-This check used Python 3.12.10, NumPy 2.5.3, and SciPy 1.18.1 on Windows. It verifies these inputs and settings, not arbitrary software versions or different seed samples. The processed benchmark snapshots are included and match the checked input hashes. Private trial files and full unprocessed datasets are not included.
+This check used Python 3.12.10, NumPy 2.5.3, and SciPy 1.18.1 on Windows. It verifies these inputs and settings, not arbitrary software versions or different seed samples. The processed benchmark snapshots are included and match the checked input hashes. Archived numeric measurements are available in [`paper_data/`](paper_data/README.md); original local re-execution logs and full unprocessed datasets are not included.
 
 ## Repository layout
 
@@ -190,4 +190,4 @@ requirements.txt      Pinned reproduction environment
 
 ## License
 
-No license has been selected for the method code. The repository is private. Inclusion of third-party dataset snapshots does not change their original ownership or usage terms; preserve their source attribution and check the original terms before redistribution.
+No license has been selected for the method code. Inclusion of third-party dataset snapshots does not change their original ownership or usage terms; preserve their source attribution and check the original terms before redistribution.

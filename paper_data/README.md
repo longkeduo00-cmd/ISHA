@@ -1,6 +1,6 @@
 # Numeric evidence for the ISHA manuscript
 
-This directory contains archived run-level measurements and recomputed source tables for the manuscript **Iterative seed-guided hypergraph alignment via consistency propagation**. It is not a new experiment run. The repository remains private, and no data licence or repository visibility has been changed.
+This directory contains archived run-level measurements and recomputed source tables for the manuscript **Iterative seed-guided hypergraph alignment via consistency propagation**. It is not a new experiment run. The owner confirmed on 27 October 2026 that the repository should remain public. The result-data upload did not change repository visibility or add a data licence.
 
 ## Coverage
 
@@ -60,4 +60,4 @@ Sources are the user-supplied archives `928.tar.gz`, `928-ablation.tar.gz` and `
 
 Only numeric results, match counts, seeds, seed fingerprints, aggregate input counts and provenance are exported. Absolute server paths, logs, tracebacks, personal label lookups, node-level prediction lists, the full manuscript, and full raw source datasets are not added. No new experiment was run, no method parameter was tuned, and no historical weighting option was added back to the ISHA implementation.
 
-Access to a private GitHub repository is not equivalent to anonymous reviewer access. The corresponding author must separately arrange the review access described in the manuscript's availability statements.
+The code and numeric evidence are accessible through this public repository. Authors selecting double-anonymous peer review should separately provide appropriately anonymised materials rather than assuming that an identifying GitHub link is anonymous.

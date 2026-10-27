@@ -41,4 +41,4 @@ The supplied source-data README files are retained unchanged:
 - [Tags-Ask-Ubuntu](simplices/tags-ask-ubuntu/README.txt)
 - [Congress-Bills](simplices/congress-bills/README.txt)
 
-These source README files describe the original collections and may mention raw files or preprocessing scripts that are not bundled here. This directory contains processed snapshots, not the complete raw collections, personal label lookup files, or experiment results. Original data attribution and usage terms remain applicable. The repository is private; these snapshots must not be treated as newly licensed data.
+These source README files describe the original collections and may mention raw files or preprocessing scripts that are not bundled here. This directory contains processed snapshots, not the complete raw collections, personal label lookup files, or experiment results. Original data attribution and usage terms remain applicable. No new licence is granted for these snapshots.
