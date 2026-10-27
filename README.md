@@ -2,7 +2,7 @@
 
 **Iterative Seed-guided Hypergraph Alignment** aligns nodes between two hypergraphs using a small set of corresponding hyperedges. The node correspondences inside each seed hyperedge pair are unknown. ISHA does not require seed-node correspondences or neural-network training.
 
-This repository contains the standalone ISHA method, a command-line interface, evaluation utilities, a repeated-experiment runner, small synthetic examples, the processed dataset snapshots used for the ten paper alignment tasks, and verified numeric evidence in [`paper_data/`](paper_data/README.md). Historical method variants, baseline implementations, manuscripts, full unprocessed datasets, and unrelated experiment outputs are not included.
+This repository contains the standalone ISHA method, a command-line interface, evaluation utilities, a repeated-experiment runner, small synthetic examples, the processed dataset snapshots used for the ten paper alignment tasks, and verified numeric evidence in [`paper_data/`](paper_data/README.md). 
 
 ## Paper results
 
